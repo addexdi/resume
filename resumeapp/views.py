@@ -12,7 +12,7 @@ def contact(request):
         if form.is_valid():
             subject = form.cleaned_data.get('subject')
             message = form.cleaned_data.get('content')
-            recipient = 'headofstate123@gmail.com'
+            recipient = 'onelordad@gmail.com'
 
             send_mail(subject, message, settings.EMAIL_HOST_USER, [recipient], fail_silently = False)
             messages.success(request, 'Thanks for contacting me ')
@@ -20,7 +20,7 @@ def contact(request):
 
             if form.is_valid() == True:
                 subject = 'Thanks for Contacting Me'
-                message = 'I would reply to your message as soon as possible. From Olamilekan Azeez'
+                message = 'I would reply to your message as soon as possible. From Adam Ibrahim'
                 receiver = form.cleaned_data.get('email')
                 send_mail(subject, message, settings.EMAIL_HOST_USER, [receiver], fail_silently = False)
                 # messages.success(request, 'Thanks for contacting me')

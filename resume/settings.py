@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
-ALLOWED_HOSTS = ['olamiresume.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'addexdi-resume.herokuapp.com']
 
 
 # Application definition
